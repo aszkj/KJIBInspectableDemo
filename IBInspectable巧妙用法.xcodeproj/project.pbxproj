@@ -15,6 +15,9 @@
 		8DE4ADAC1EA146D600ADB31A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE4ADAA1EA146D600ADB31A /* LaunchScreen.storyboard */; };
 		8DE4ADB71EA146D600ADB31A /* IBInspectable____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4ADB61EA146D600ADB31A /* IBInspectable____Tests.m */; };
 		8DE4ADC21EA146D600ADB31A /* IBInspectable____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4ADC11EA146D600ADB31A /* IBInspectable____UITests.m */; };
+		8DE4ADDB1EA17DE400ADB31A /* KJXibConfigureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4ADD81EA17DE400ADB31A /* KJXibConfigureView.m */; };
+		8DE4ADDC1EA17DE400ADB31A /* UIView+Design.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4ADDA1EA17DE400ADB31A /* UIView+Design.m */; };
+		8DE4ADDF1EA18A9B00ADB31A /* KJCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE4ADDE1EA18A9B00ADB31A /* KJCustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		8DE4ADBD1EA146D600ADB31A /* IBInspectable巧妙用法UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBInspectable巧妙用法UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE4ADC11EA146D600ADB31A /* IBInspectable____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "IBInspectable____UITests.m"; sourceTree = "<group>"; };
 		8DE4ADC31EA146D600ADB31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DE4ADD71EA17DE400ADB31A /* KJXibConfigureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJXibConfigureView.h; sourceTree = "<group>"; };
+		8DE4ADD81EA17DE400ADB31A /* KJXibConfigureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJXibConfigureView.m; sourceTree = "<group>"; };
+		8DE4ADD91EA17DE400ADB31A /* UIView+Design.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Design.h"; sourceTree = "<group>"; };
+		8DE4ADDA1EA17DE400ADB31A /* UIView+Design.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Design.m"; sourceTree = "<group>"; };
+		8DE4ADDD1EA18A9B00ADB31A /* KJCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJCustomView.h; sourceTree = "<group>"; };
+		8DE4ADDE1EA18A9B00ADB31A /* KJCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJCustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		8DE4AD9B1EA146D500ADB31A /* IBInspectable巧妙用法 */ = {
 			isa = PBXGroup;
 			children = (
+				8DE4ADD61EA17DCB00ADB31A /* XibDesign */,
 				8DE4AD9F1EA146D600ADB31A /* AppDelegate.h */,
 				8DE4ADA01EA146D600ADB31A /* AppDelegate.m */,
 				8DE4ADA21EA146D600ADB31A /* ViewController.h */,
@@ -110,6 +120,8 @@
 				8DE4ADAA1EA146D600ADB31A /* LaunchScreen.storyboard */,
 				8DE4ADAD1EA146D600ADB31A /* Info.plist */,
 				8DE4AD9C1EA146D600ADB31A /* Supporting Files */,
+				8DE4ADDD1EA18A9B00ADB31A /* KJCustomView.h */,
+				8DE4ADDE1EA18A9B00ADB31A /* KJCustomView.m */,
 			);
 			path = "IBInspectable巧妙用法";
 			sourceTree = "<group>";
@@ -138,6 +150,17 @@
 				8DE4ADC31EA146D600ADB31A /* Info.plist */,
 			);
 			path = "IBInspectable巧妙用法UITests";
+			sourceTree = "<group>";
+		};
+		8DE4ADD61EA17DCB00ADB31A /* XibDesign */ = {
+			isa = PBXGroup;
+			children = (
+				8DE4ADD71EA17DE400ADB31A /* KJXibConfigureView.h */,
+				8DE4ADD81EA17DE400ADB31A /* KJXibConfigureView.m */,
+				8DE4ADD91EA17DE400ADB31A /* UIView+Design.h */,
+				8DE4ADDA1EA17DE400ADB31A /* UIView+Design.m */,
+			);
+			path = XibDesign;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +230,7 @@
 				TargetAttributes = {
 					8DE4AD981EA146D500ADB31A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LLKYVL766D;
 						ProvisioningStyle = Automatic;
 					};
 					8DE4ADB11EA146D600ADB31A = {
@@ -275,6 +299,9 @@
 			files = (
 				8DE4ADA41EA146D600ADB31A /* ViewController.m in Sources */,
 				8DE4ADA11EA146D600ADB31A /* AppDelegate.m in Sources */,
+				8DE4ADDB1EA17DE400ADB31A /* KJXibConfigureView.m in Sources */,
+				8DE4ADDC1EA17DE400ADB31A /* UIView+Design.m in Sources */,
+				8DE4ADDF1EA18A9B00ADB31A /* KJCustomView.m in Sources */,
 				8DE4AD9E1EA146D600ADB31A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LLKYVL766D;
 				INFOPLIST_FILE = "IBInspectable巧妙用法/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "yilidibkd.com.IBInspectable----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yldbkd.www.buyer.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -435,9 +463,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LLKYVL766D;
 				INFOPLIST_FILE = "IBInspectable巧妙用法/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "yilidibkd.com.IBInspectable----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yldbkd.www.buyer.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
